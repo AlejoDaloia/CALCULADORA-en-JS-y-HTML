@@ -2,7 +2,6 @@ let valorDisplay= "";
 let result= "";
 let deshacer="";
 let incluye= false;
-let memoria= "";
 
 function sumarDisplay(value){
         valorDisplay+=value;
