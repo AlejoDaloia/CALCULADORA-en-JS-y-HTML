@@ -2,7 +2,7 @@ let valorDisplay= "";
 let result= "";
 let deshacer="";
 let incluye= false;
-
+let memoria= "";
 
 function sumarDisplay(value){
         valorDisplay+=value;
@@ -23,13 +23,11 @@ function parentesis(value){
         }
 }
 function limpiarDisplay(){
-        deshacer= valorDisplay;
         valorDisplay="";
         document.getElementById("display").value= "";
 }
 
 function del(){
-        deshacer= valorDisplay;
         valorDisplay= valorDisplay.slice(0, valorDisplay.length - 1);
         document.getElementById("display").value= valorDisplay;
 }
@@ -37,11 +35,6 @@ function del(){
 function mostrar_result(){
         valorDisplay= eval(valorDisplay).toString();
         result= valorDisplay
-        document.getElementById("display").value= valorDisplay;
-}
-
-function undo(){
-        valorDisplay= deshacer;
         document.getElementById("display").value= valorDisplay;
 }
 
