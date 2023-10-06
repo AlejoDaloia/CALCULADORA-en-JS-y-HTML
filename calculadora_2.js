@@ -6,9 +6,6 @@ let incluye= false;
 function sumarDisplay(value){
         valorDisplay+=value;
         document.getElementById("display").value= valorDisplay;
-        if (valorDisplay==="800815"){
-                alert("tetas!!!!111");
-        }
 }
 
 function parentesis(value){
